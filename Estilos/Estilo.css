@@ -72,21 +72,28 @@ section {
 .logo img {
     width: 120px;
     height: auto;
+    border: 2px solid #f7f7f7;
     border-radius: 50%;
+    
 }
 
 .logo {
     order: -1; /* Cambia el orden del logotipo para que aparezca primero */
     margin-right: auto; /* Empuja los elementos de navegación hacia la derecha */
     margin-bottom: 80px; /* Ajusta el espaciado inferior entre el logotipo y los elementos de la lista */
+    
 }
 
 /* Estructura de diseño de main */
+
+/* Bloque de contenido seletion Superior*/
 #superior {
     order: -1; /* Cambia el orden para que aparezca primero */
     height: 15vh; /* Ajusta el tamaño de la parte superior */
 }
 
+
+/* Bloque de contenido seletion Central*/
 #central {
     display: flex;
     flex-direction: column;
@@ -94,10 +101,12 @@ section {
     height: calc(113vh - 15vh - 5vh - 240px); /* Ajusta el tamaño de la parte central */
 }
 
-.central-content {
+#central .central-content {
     overflow-y: auto; /* Agrega desplazamiento vertical si el contenido excede el tamaño */
 }
 
+
+/*Bloque de contenido seletion inferior del header*/
 #inferior-header {
     display: flex;
     flex-direction: column;
@@ -108,18 +117,18 @@ section {
 }
 
 /* Botones ubicados en el #inferior-header */
-.botones-container {
+#inferior-header .botones-container {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
 }
 
-.botones-container a {
+#inferior-header .botones-container a {
     margin: 10px; /* Ajusta el margen entre los botones */
 }
 
-.botones-container img {
+#inferior-header .botones-container img {
     width: 40px; /* Ajusta el ancho de los botones */
     height: 40px; /* Ajusta la altura de los botones */
 }
