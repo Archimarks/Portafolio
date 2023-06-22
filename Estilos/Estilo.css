@@ -92,7 +92,19 @@ section {
     height: 15vh; /* Ajusta el tamaño de la parte superior */
 }
 
+#superior .carousel-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+#superior .carousel-inner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 /* Bloque de contenido seletion Central*/
 #central {
     display: flex;
